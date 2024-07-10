@@ -1,14 +1,14 @@
 ﻿using Azure.Messaging.ServiceBus;
 
-namespace ServiceBus.MessageHandler.Sender;
+namespace ServiceBus.MessageHandler.Sender.Instances;
 
 public class ServiceBusInstance
 {
     private readonly string _connectionString;
 
     private readonly string _queueOne = "vinicera-q1";
-    private readonly string _queueTwo = "vinicera-q2";
-    private readonly int _maxNumberofMessages = 3;
+    
+    public readonly int MaxNumberofMessages = 3;
     public ServiceBusInstance(string connectionString)
     {
         _connectionString = connectionString;
@@ -17,7 +17,7 @@ public class ServiceBusInstance
     private ServiceBusClient GetServiceBusClient()
     => new ServiceBusClient(_connectionString);
 
-    public ServiceBusSender GetServiceBusSender(string? queue = null)
-        => GetServiceBusClient().CreateSender(queue ?? _queueOne);
-
+    public ServiceBusSender GetServiceBusSender()
+        => GetServiceBusClient().CreateSender( _queueOne);
+    
 }
