@@ -10,6 +10,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("683ae1a9-7288-4d18-bd99-e605ff799242")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ServiceBus.MessageHandler.Sender")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
