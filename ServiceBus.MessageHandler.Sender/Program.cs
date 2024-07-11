@@ -9,7 +9,7 @@ var builder = new ConfigurationBuilder()
 
 var configuration = builder.Build();
 
-var instance = new ServiceBusInstance(configuration["ServiceBusConnectionString"]);
+var instance = new ServiceBusInstance();
 var sender = instance.GetServiceBusSender();
 
 using ServiceBusMessageBatch batch = await sender.CreateMessageBatchAsync();

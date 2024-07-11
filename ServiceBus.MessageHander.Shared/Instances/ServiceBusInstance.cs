@@ -1,23 +1,31 @@
 ﻿using Azure.Messaging.ServiceBus;
+using Microsoft.Extensions.Configuration;
 
 namespace ServiceBus.MessageHander.Shared.Instances;
 
 public class ServiceBusInstance
 {
-    private readonly string _connectionString;
-
-    private readonly string _queueOne = "vinicera-q1";
+    
+    private readonly string _queue = "vinicera-q1";
     
     public readonly int MaxNumberofMessages = 3;
-    public ServiceBusInstance(string connectionString)
+    public ServiceBusInstance()
     {
-        _connectionString = connectionString;
+       
     }
 
+    public string GetServiceBusConnectionString()
+    {
+        var builder = new ConfigurationBuilder()
+            .AddUserSecrets<Program>();
+        var configuration = builder.Build();
+        
+        return configuration["ServiceBusConnectionString"];
+    }
     private ServiceBusClient GetServiceBusClient()
-    => new ServiceBusClient(_connectionString);
+    => new ServiceBusClient(GetServiceBusConnectionString());
 
-    public ServiceBusSender GetServiceBusSender()
-        => GetServiceBusClient().CreateSender( _queueOne);
+    public ServiceBusSender GetServiceBusSender(string queue = null)
+        => GetServiceBusClient().CreateSender(queue ?? _queue);
     
 }
