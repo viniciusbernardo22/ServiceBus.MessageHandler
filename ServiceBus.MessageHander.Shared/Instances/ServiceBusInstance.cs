@@ -9,11 +9,7 @@ public class ServiceBusInstance
     private readonly string _queue = "vinicera-q1";
     
     public readonly int MaxNumberofMessages = 3;
-    public ServiceBusInstance()
-    {
-       
-    }
-
+    
     public string GetServiceBusConnectionString()
     {
         var builder = new ConfigurationBuilder()
