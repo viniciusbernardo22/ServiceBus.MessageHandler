@@ -15,3 +15,6 @@ O objetivo deste projeto é demonstrar como utilizar o Azure Service Bus para ge
 - .NET 6
 - Azure Service Bus
 - .NET User Secrets
+
+### Pré-requisitos
+Certifique-se de ter o .NET 6 SDK instalado na sua máquina. Você pode baixar e instalar o SDK a partir do [site oficial do .NET](https://dotnet.microsoft.com/download).
