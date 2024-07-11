@@ -6,9 +6,9 @@ namespace ServiceBus.MessageHander.Shared.Instances;
 public class ServiceBusInstance
 {
     
-    private readonly string _queue = "vinicera-q1";
+    public readonly string Queue = "vinicera-q1";
     
-    public readonly int MaxNumberofMessages = 3;
+    public readonly int MaxNumberofMessages = 100;
     
     public string GetServiceBusConnectionString()
     {
@@ -18,10 +18,10 @@ public class ServiceBusInstance
         
         return configuration["ServiceBusConnectionString"];
     }
-    private ServiceBusClient GetServiceBusClient()
+    public ServiceBusClient GetServiceBusClient()
     => new ServiceBusClient(GetServiceBusConnectionString());
 
-    public ServiceBusSender GetServiceBusSender(string queue = null)
-        => GetServiceBusClient().CreateSender(queue ?? _queue);
+    public ServiceBusSender GetServiceBusSender(string? queue = null)
+        => GetServiceBusClient().CreateSender(queue ?? Queue);
     
 }
