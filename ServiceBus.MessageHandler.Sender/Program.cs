@@ -1,7 +1,8 @@
 ﻿
 using Azure.Messaging.ServiceBus;
 using Microsoft.Extensions.Configuration;
-using ServiceBus.MessageHandler.Sender.Instances;
+using ServiceBus.MessageHander.Shared.Instances;
+
 
 var builder = new ConfigurationBuilder()
     .AddUserSecrets<Program>();

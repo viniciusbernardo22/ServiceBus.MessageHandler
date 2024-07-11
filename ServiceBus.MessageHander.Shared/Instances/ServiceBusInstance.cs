@@ -1,6 +1,6 @@
 ﻿using Azure.Messaging.ServiceBus;
 
-namespace ServiceBus.MessageHandler.Sender.Instances;
+namespace ServiceBus.MessageHander.Shared.Instances;
 
 public class ServiceBusInstance
 {

@@ -434,6 +434,22 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "ServiceBus.MessageHander.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Azure.Messaging.ServiceBus": "7.17.5",
+          "Microsoft.Extensions.Configuration": "6.0.1",
+          "Microsoft.Extensions.Configuration.UserSecrets": "6.0.1",
+          "Microsoft.Extensions.DependencyInjection": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/ServiceBus.MessageHander.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServiceBus.MessageHander.Shared.dll": {}
+        }
       }
     }
   },
@@ -1055,6 +1071,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ServiceBus.MessageHander.Shared/1.0.0": {
+      "type": "project",
+      "path": "../ServiceBus.MessageHander.Shared/ServiceBus.MessageHander.Shared.csproj",
+      "msbuildProject": "../ServiceBus.MessageHander.Shared/ServiceBus.MessageHander.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1062,7 +1083,8 @@
       "Azure.Messaging.ServiceBus >= 7.17.5",
       "Microsoft.Extensions.Configuration >= 6.0.1",
       "Microsoft.Extensions.Configuration.UserSecrets >= 6.0.1",
-      "Microsoft.Extensions.DependencyInjection >= 6.0.1"
+      "Microsoft.Extensions.DependencyInjection >= 6.0.1",
+      "ServiceBus.MessageHander.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1089,7 +1111,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\vini3\\OneDrive\\Desktop\\Dev\\Courses\\ServiceBus.Message\\ServiceBus.MessageHander.Shared\\ServiceBus.MessageHander.Shared.csproj": {
+              "projectPath": "C:\\Users\\vini3\\OneDrive\\Desktop\\Dev\\Courses\\ServiceBus.Message\\ServiceBus.MessageHander.Shared\\ServiceBus.MessageHander.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
