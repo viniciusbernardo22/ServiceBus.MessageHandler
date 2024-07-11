@@ -1,0 +1,12 @@
+C:\Users\vini3\OneDrive\Desktop\Dev\Courses\ServiceBus.Message\ServiceBus.MessageHander.Shared\bin\Debug\net6.0\ServiceBus.MessageHander.Shared.deps.json
+C:\Users\vini3\OneDrive\Desktop\Dev\Courses\ServiceBus.Message\ServiceBus.MessageHander.Shared\bin\Debug\net6.0\ServiceBus.MessageHander.Shared.dll
+C:\Users\vini3\OneDrive\Desktop\Dev\Courses\ServiceBus.Message\ServiceBus.MessageHander.Shared\bin\Debug\net6.0\ServiceBus.MessageHander.Shared.pdb
+C:\Users\vini3\OneDrive\Desktop\Dev\Courses\ServiceBus.Message\ServiceBus.MessageHander.Shared\obj\Debug\net6.0\ServiceBus.MessageHander.Shared.csproj.AssemblyReference.cache
+C:\Users\vini3\OneDrive\Desktop\Dev\Courses\ServiceBus.Message\ServiceBus.MessageHander.Shared\obj\Debug\net6.0\ServiceBus.MessageHander.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vini3\OneDrive\Desktop\Dev\Courses\ServiceBus.Message\ServiceBus.MessageHander.Shared\obj\Debug\net6.0\ServiceBus.MessageHander.Shared.AssemblyInfoInputs.cache
+C:\Users\vini3\OneDrive\Desktop\Dev\Courses\ServiceBus.Message\ServiceBus.MessageHander.Shared\obj\Debug\net6.0\ServiceBus.MessageHander.Shared.AssemblyInfo.cs
+C:\Users\vini3\OneDrive\Desktop\Dev\Courses\ServiceBus.Message\ServiceBus.MessageHander.Shared\obj\Debug\net6.0\ServiceBus.MessageHander.Shared.csproj.CoreCompileInputs.cache
+C:\Users\vini3\OneDrive\Desktop\Dev\Courses\ServiceBus.Message\ServiceBus.MessageHander.Shared\obj\Debug\net6.0\ServiceBus.MessageHander.Shared.dll
+C:\Users\vini3\OneDrive\Desktop\Dev\Courses\ServiceBus.Message\ServiceBus.MessageHander.Shared\obj\Debug\net6.0\refint\ServiceBus.MessageHander.Shared.dll
+C:\Users\vini3\OneDrive\Desktop\Dev\Courses\ServiceBus.Message\ServiceBus.MessageHander.Shared\obj\Debug\net6.0\ServiceBus.MessageHander.Shared.pdb
+C:\Users\vini3\OneDrive\Desktop\Dev\Courses\ServiceBus.Message\ServiceBus.MessageHander.Shared\obj\Debug\net6.0\ref\ServiceBus.MessageHander.Shared.dll
